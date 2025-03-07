@@ -47,6 +47,12 @@ a{
     text-justify: distribute;
     gap: 5px;
     padding: 10px;
+
+    
+}
+
+#direita_Piloto:active{
+    background-color: aqua;
 }
 
 .button_robo{

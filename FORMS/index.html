@@ -5,9 +5,11 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados da Competição</title>
+    <link rel="icon" href="Dados da Competição_files/vertical-4c (1).png"type="image/x-icon">
+
 </head>
 <body>
-    <img src="./Dados da Competição_files/Design sem nome.png" alt="Imagem">
+    <img src="./Dados da Competição_files/4.png" alt="Imagem">
 
     <div class="form-container">
         <h1>Dados da Competição</h1>
@@ -26,13 +28,75 @@
             <!-- Número da equipe -->
             <div class="form-group">
                 <label for="numero-equipe">Número da equipe:</label>
-                <input type="number" id="numero-equipe" name="numero-equipe" required="">
+
+                <select id="numero-equipe" name="numero-equipe"required="" >
+                    <option value="">Selecione uma opção</option>
+                    <option value="1119">1119</option>
+                    <option value="1156">1156</option>
+                    <option value="1772">1772</option>
+                    <option value="1860">1860</option>
+                    <option value="5800">5800</option>
+                    <option value="6404">6404</option>
+                    <option value="7033">7033</option>
+                    <option value="7459">7459</option>
+                    <option value="7563">7563</option>
+                    <option value="7565">7565</option>
+                    <option value="7657">7567</option>
+                    <option value="8066">8066</option>
+                    <option value="8276">8276</option>
+                    <option value="8882">8882</option>
+                    <option value="9045">9045</option>
+                    <option value="9046">9046</option>
+                    <option value="9047">9047</option>
+                    <option value="9048">9048</option>
+                    <option value="9049">9049</option>
+                    <option value="9050">9050</option>
+                    <option value="9066">9066</option>
+                    <option value="9085">9085</option>
+                    <option value="9110">9110</option>
+                    <option value="9162">9162</option>
+                    <option value="9163">9163</option>
+                    <option value="9164">9164</option>
+                    <option value="9166">9166</option>
+                    <option value="9169">9169</option>
+                    <option value="9175">9175</option>
+                    <option value="9178">9178</option>
+                    <option value="9195">9195</option>
+                    <option value="9199">9199</option>
+                    <option value="9200">9200</option>
+                    <option value="9218">9218</option>
+                    <option value="9219">9219</option>
+                    <option value="9302">9302</option>
+                    <option value="9305">9305</option>
+                    <option value="9458">9458</option>
+                    <option value="9459">9459</option>
+                    <option value="9460">9460</option>
+                    <option value="9461">9461</option>
+                    <option value="9484">9484</option>
+                    <option value="9486">9486</option>
+                    <option value="9487">9487</option>
+                    <option value="9603">9603</option>
+                    <option value="9604">9604</option>
+                    <option value="9611">9611</option>
+                    <option value="9614">9614</option>
+                    <option value="9617">9617</option>
+                    <option value="9657">9657</option>
+                    <option value="9675">9675</option>
+                    <option value="10019">10019</option>
+                    <option value="10140">10140</option>
+                    <option value="10190">10190</option>
+                    <option value="10200">10200</option>
+                    <option value="10343">10343</option>
+                    <option value="10345">10345</option>
+                    <option value="10356">10356</option>
+                    <option value="10466">10466</option>
+                  </select>
             </div>
 
             <!-- Qualificatória -->
             <div class="form-group">
                 <label for="qualificatoria">Qual a qualificatória?</label>
-                <input type="text" id="qualificatoria" name="qualificatoria" required="">
+                <input type="text" id="qualificatoria" name="qualificatoria" required="" >
             </div>
 
             <div class="form-group">
@@ -93,12 +157,6 @@
             </div>
 
             <!--forma de coleta-->
-            <div class="form-group">
-                <label>Coleta:</label>
-                <label><input type="radio" id="Estação" name="coleta" value="Estação" required=""> Estação</label>
-                <label><input type="radio" id="Chão" name="coleta" value="Chão" required=""> Chão</label>
-                <label><input type="radio" id="Ambas" name="coleta" value="Ambas" required=""> Ambas</label>
-            </div>
 
             <!-- barge -->
             <div class="form-group">
@@ -107,26 +165,67 @@
                 <label><input type="radio" id="rasa" name="barge" value="rasa" required=""> Rasa</label>
                 <label><input type="radio" id="profunda" name="barge" value="profunda" required=""> Profunda</label>
             </div>
+            <div>
+                <fieldset>
+                    <legend>Informações de coleta:</legend>
+                
+                    <div>
+                        <input type="checkbox" id="AlgaReef" name="Coleta" value="AlgaReef" />
+                        <label for="AlgaReef">Alga - Reef</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="AlgaChao" name="Coleta" value="AlgaChao" />
+                        <label for="AlgaChao">Alga - Chão</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="CoralStage" name="Coleta" value="CoralStage"/>
+                        <label for="CoralStage">Coral - Stage</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="CoralChao" name="Coleta" value="CoralChao"/>
+                        <label for="CoralChao">Coral -Chão</label>
+                    </div>
+                    
+                </fieldset>
+            </div>
+
 
             <!-- Penalidades e observações -->
             <div class="form-group">
-                <label for="penalidades">Penalidades e/ou observações:</label>
+                <label for="penalidades">Observações:</label>
                 <textarea id="penalidades" name="penalidades" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="avaliador">Quem preencheu o formulário:</label>
+                <select id="avaliador" name="avaliador" required="" >
+                    <option value="">Selecione uma opção</option>
+                    <option value="Gustavo">Gustavo</option>
+                    <option value="Marina">Marina</option>
+                  </select>
             </div>
 
             <!-- Botão de envio -->
             <div class="form-submit">
                 <button type="submit">Enviar</button>
-            </div>
+            </div>            
+
         </form>
     </div>
 
     <script>
+
+
+
+
     // Variáveis para armazenar os pontos 
     let pontosAutonomo = 0;
     let pontosTeleoperado = 0;
     let pontosBarge = 0;
-    let coleta = "";
+    let coleta = [];
     let saida = false;
     let l1_auto = 0;
     let l2_auto = 0;
@@ -142,6 +241,7 @@
     let process_tele = 0;
     let posicaoPiloto = "";
     let posicaoRobo = "";
+    let avaliador = "";
 
     // Função para atualizar os pontos totais
     function atualizarPontos() {
@@ -159,6 +259,13 @@
     });
 
     // Lógica para selecionar a posição do robô
+    document.querySelectorAll('.robo').forEach((button) => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            posicaoRobo = this.id;
+        });
+    });
+
     document.querySelectorAll('.robo').forEach((button) => {
         button.addEventListener('click', function (e) {
             e.preventDefault();
@@ -250,18 +357,22 @@
         });
     });
      
-    document.querySelectorAll('input[name="coleta"]').forEach((radio) => {
-        radio.addEventListener('change', function() {
-            switch(this.value){
-                case 'Estação': coleta = 'Estação'; break;
-                case 'Chão': coleta = 'Chão'; break;
-                case 'Ambas': coleta = 'Ambas'; break;
-            }
-        })
-    })
+    function coletarCheckboxes() {
+    // Cria um array vazio para armazenar os valores dos checkboxes marcados
+    let checkboxes = document.querySelectorAll('input[name="Coleta"]:checked');
+    // Itera sobre os checkboxes marcados e adiciona seus valores ao array "coleta"
+    checkboxes.forEach(function(checkbox) {
+        coleta.push(checkbox.value);
+    });
+    // Exibe o array "coleta" no console (ou você pode fazer outra coisa com ele)
+    console.log(coleta);
+    }
+
+
 
     // Evento de envio do formulário
     document.getElementById('competitionForm').addEventListener('submit', function (e) {
+        coletarCheckboxes();
         e.preventDefault(); // Impede o envio padrão do formulário
 
         // Calcula o total de pontos
@@ -279,7 +390,9 @@
             penalidades: document.getElementById('penalidades').value,
             posicaoPiloto,
             posicaoRobo,
-            coleta
+            coleta,
+            avaliador: document.getElementById('avaliador').value
+
         };
 
         fetch("https://script.google.com/macros/s/AKfycbzHaKZBgI2Dr2sbEB7G9E_y36R8VLOSkgeo8nVadsmVqOwI03TRS-1bhgCgxUAZ4dq7/exec", {  // Cole a URL do Web App do Google Apps Script
@@ -316,6 +429,7 @@
         totalDiv.textContent = 'Total de Pontos: 0';
         document.body.appendChild(totalDiv);
     });
+
 
     </script>
 
