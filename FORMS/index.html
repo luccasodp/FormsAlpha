@@ -2,7 +2,7 @@
 <!-- saved from url=(0049)https://canintech9602.com.br/html/formulario.html -->
 <html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="./Dados da Competição_files/formulario.css">
-    
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados da Competição</title>
     <link rel="icon" href="Dados da Competição_files/vertical-4c (1).png"type="image/x-icon">
@@ -13,15 +13,15 @@
 
     <div class="form-container">
         <h1>Dados da Competição</h1>
-        <form id="competitionForm">
+        <form id="competitionForm" method="post">
             <!-- Temporada -->
             <div class="form-group">
-                <label for="temporada">Qual a aliança?</label>
+                <div>Qual a aliança?</div>
                 <label>
-                    <input type="radio" id="aliance" name="aliance" value="Azul" required=""> Azul
+                    <input type="radio" id="alianceBlue" name="aliance" value="Azul" required=""> Azul
                 </label>
                 <label>
-                    <input type="radio" id="aliance" name="aliance" value="Vermelho" required=""> Vermelho
+                    <input type="radio" id="alianceRed" name="aliance" value="Vermelho" required=""> Vermelho
                 </label>
             </div>
 
@@ -100,58 +100,62 @@
             </div>
 
             <div class="form-group">
-                <label for="posi">Posição do piloto:</label>
+                <label>Posição do piloto:<label>
                 <div class="button">
-                <label for="direita_Piloto">
-                    <button class="posi" id="Direita Piloto"></button>
-                    Direita
-                </label>
-                <label for="meio_Piloto">
-                    <button class="posi" id="Meio Piloto"></button>
-                    Meio
-                </label>
-                <label for="esquerda_Piloto">
+                <label for="Esquerda Piloto">
                     <button class="posi" id="Esquerda Piloto"></button>
                     Esquerda
                 </label>
+                <label for="Meio Piloto">
+                    <button class="posi" id="Meio Piloto"></button>
+                    Meio
+                </label>
+                <label for="Direita Piloto">
+                    <button class="posi" id="Direita Piloto"></button>
+                    Direita
+                </label>
+                
             </div>
             </div>
 
             <!-- Pontos de autônomo -->
             <div class="form-group">
-                <label>Posição robô:</label>
+                <div>Posição robô:</div>
                 <div class="button_robo">
                     
-                    <label for="direita_Robo">
-                        <button class="robo" id="Direita Robo"></button>
-                        Direita
-                    </label>
-                    <label for="meio_Robo">
-                        <button class="robo" id="Meio Robo"></button>
-                        Meio
-                    </label>
-                    <label for="esquerda_Robo">
+                    <label for="Esquerda Robo">
                         <button class="robo" id="Esquerda Robo"></button>
                         Esquerda
                     </label>
+                    
+                    <label for="Meio Robo">
+                        <button class="robo" id="Meio Robo"></button>
+                        Meio
+                    </label>
+                    <label for="Direita Robo">
+                        <button class="robo" id="Direita Robo"></button>
+                        Direita
+                    </label>
+                    
                 </div>
 
-                <label for="pontos-autonomo">Pontos de autônomo:</label>
-                <label>L1 <button class="point-auto" id="L1-auto"></button></label>
-                <label>L2 <button class="point-auto" id="L2-auto"></button></label>
-                <label>L3 <button class="point-auto" id="L3-auto"></button></label>
+                <div>Pontos de autônomo:</div>
                 <label>L4 <button class="point-auto" id="L4-auto"></button></label>
+                <label>L3 <button class="point-auto" id="L3-auto"></button></label>
+                <label>L2 <button class="point-auto" id="L2-auto"></button></label>
+                <label>L1 <button class="point-auto" id="L1-auto"></button></label>
+                
                 <label>Rede <button class="point-auto" id="rede"></button></label>
                 <label>Processador <button class="point-auto" id="processador"></button></label>
             </div>
 
             <!-- Pontos de teleoperado -->
             <div class="form-group">
-                <label for="pontos-teleoperado">Pontos de teleoperado:</label>
-                <label>L1 <button class="point-tele" id="L1-tele"></button></label>
-                <label>L2 <button class="point-tele" id="L2-tele"></button></label>
-                <label>L3 <button class="point-tele" id="L3-tele"></button></label>
+                <div>Pontos de teleoperado:</div>
                 <label>L4 <button class="point-tele" id="L4-tele"></button></label>
+                <label>L3 <button class="point-tele" id="L3-tele"></button></label>
+                <label>L2 <button class="point-tele" id="L2-tele"></button></label>
+                <label>L1 <button class="point-tele" id="L1-tele"></button></label>   
                 <label>Rede <button class="point-tele" id="rede"></button></label>
                 <label>Processador <button class="point-tele" id="processador"></button></label>
             </div>
@@ -160,7 +164,7 @@
 
             <!-- barge -->
             <div class="form-group">
-                <label>Barge:</label>
+                <div>Barge:</div>
                 <label><input type="radio" id="estacinar" name="barge" value="estacionar" required=""> Estacionar</label>
                 <label><input type="radio" id="rasa" name="barge" value="rasa" required=""> Rasa</label>
                 <label><input type="radio" id="profunda" name="barge" value="profunda" required=""> Profunda</label>
@@ -169,22 +173,22 @@
                 <fieldset>
                     <legend>Informações de coleta:</legend>
                 
-                    <div>
+                    <div class="check" >
                         <input type="checkbox" id="AlgaReef" name="Coleta" value="AlgaReef" />
                         <label for="AlgaReef">Alga - Reef</label>
                     </div>
 
-                    <div>
-                        <input type="checkbox" id="AlgaChao" name="Coleta" value="AlgaChao" />
+                    <div class="check">
+                        <input style="display: inline;" type="checkbox" id="AlgaChao" name="Coleta" value="AlgaChao" />
                         <label for="AlgaChao">Alga - Chão</label>
                     </div>
                     
-                    <div>
+                    <div class="check">
                         <input type="checkbox" id="CoralStage" name="Coleta" value="CoralStage"/>
                         <label for="CoralStage">Coral - Stage</label>
                     </div>
 
-                    <div>
+                    <div class="check">
                         <input type="checkbox" id="CoralChao" name="Coleta" value="CoralChao"/>
                         <label for="CoralChao">Coral -Chão</label>
                     </div>
@@ -395,7 +399,7 @@
 
         };
 
-        fetch("https://script.google.com/macros/s/AKfycbzHaKZBgI2Dr2sbEB7G9E_y36R8VLOSkgeo8nVadsmVqOwI03TRS-1bhgCgxUAZ4dq7/exec", {  // Cole a URL do Web App do Google Apps Script
+        fetch("https://script.google.com/macros/s/AKfycby9o01rIKQRCYzbrRH30aMsrh3DrbuI1khwyMErGxcTKzdWAGocCYowKUTpZ4GWm8Fe/exec", {  // Cole a URL do Web App do Google Apps Script
         method: "POST",
         mode: "no-cors",
         headers: {
@@ -416,9 +420,9 @@
         l1_tele = l2_tele = l3_tele = l4_tele = rede_tele = process_tele = 0;
         posicaoPiloto = "";
         posicaoRobo = "";
-        coleta = "";
+        coleta = [];
+        avaliador = "";
         atualizarPontos();
-
     });
 
 
