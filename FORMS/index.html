@@ -31,65 +31,11 @@
 
                 <select id="numero-equipe" name="numero-equipe"required="" >
                     <option value="">Selecione uma opção</option>
-                    <option value="1119">1119</option>
-                    <option value="1156">1156</option>
-                    <option value="1772">1772</option>
-                    <option value="1860">1860</option>
-                    <option value="5800">5800</option>
-                    <option value="6404">6404</option>
-                    <option value="7033">7033</option>
-                    <option value="7459">7459</option>
-                    <option value="7563">7563</option>
-                    <option value="7565">7565</option>
-                    <option value="7657">7567</option>
-                    <option value="8066">8066</option>
-                    <option value="8276">8276</option>
-                    <option value="8882">8882</option>
-                    <option value="9045">9045</option>
-                    <option value="9046">9046</option>
-                    <option value="9047">9047</option>
-                    <option value="9048">9048</option>
-                    <option value="9049">9049</option>
-                    <option value="9050">9050</option>
-                    <option value="9066">9066</option>
-                    <option value="9085">9085</option>
-                    <option value="9110">9110</option>
-                    <option value="9162">9162</option>
-                    <option value="9163">9163</option>
-                    <option value="9164">9164</option>
-                    <option value="9166">9166</option>
-                    <option value="9169">9169</option>
-                    <option value="9175">9175</option>
-                    <option value="9178">9178</option>
-                    <option value="9195">9195</option>
-                    <option value="9199">9199</option>
-                    <option value="9200">9200</option>
-                    <option value="9218">9218</option>
-                    <option value="9219">9219</option>
-                    <option value="9302">9302</option>
-                    <option value="9305">9305</option>
-                    <option value="9458">9458</option>
-                    <option value="9459">9459</option>
-                    <option value="9460">9460</option>
-                    <option value="9461">9461</option>
-                    <option value="9484">9484</option>
-                    <option value="9486">9486</option>
-                    <option value="9487">9487</option>
-                    <option value="9603">9603</option>
-                    <option value="9604">9604</option>
-                    <option value="9611">9611</option>
-                    <option value="9614">9614</option>
-                    <option value="9617">9617</option>
-                    <option value="9657">9657</option>
-                    <option value="9675">9675</option>
-                    <option value="10019">10019</option>
-                    <option value="10140">10140</option>
-                    <option value="10190">10190</option>
-                    <option value="10200">10200</option>
-                    <option value="10343">10343</option>
-                    <option value="10345">10345</option>
-                    <option value="10356">10356</option>
-                    <option value="10466">10466</option>
+                    <option value="6328">6328</option>
+                    <option value="3467">3467</option>
+                    <option value="97">97</option>
+                    <option value="5903">5903</option>
+                    
                   </select>
             </div>
 
@@ -97,6 +43,16 @@
             <div class="form-group">
                 <label for="qualificatoria">Qual a qualificatória?</label>
                 <input type="text" id="qualificatoria" name="qualificatoria" required="" >
+            </div>
+
+            <div class="form-group">
+                <div>O robô é de defesa?</div>
+                <label>
+                    <input type="radio" id="defesa" name="defesa" value=0 required=""> Não    
+                </label>
+                <label>
+                    <input type="radio" id="defesa" name="defesa" value=1 required=""> Sim
+                </label>
             </div>
 
             <div class="form-group">
@@ -226,6 +182,7 @@
 
 
     // Variáveis para armazenar os pontos 
+    let defesa = 0;
     let pontosAutonomo = 0;
     let pontosTeleoperado = 0;
     let pontosBarge = 0;
@@ -395,8 +352,8 @@
             posicaoPiloto,
             posicaoRobo,
             coleta,
-            avaliador: document.getElementById('avaliador').value
-
+            avaliador: document.getElementById('avaliador').value,
+            defesa: document.querySelector('input[name="defesa"]:checked').value,
         };
 
         fetch("https://script.google.com/macros/s/AKfycby9o01rIKQRCYzbrRH30aMsrh3DrbuI1khwyMErGxcTKzdWAGocCYowKUTpZ4GWm8Fe/exec", {  // Cole a URL do Web App do Google Apps Script
