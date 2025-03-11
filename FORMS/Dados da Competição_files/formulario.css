@@ -58,7 +58,7 @@ select{
     width: 50px;
     height: 25px;
     border:3px #333 double;
-    background-color: rgb(194, 121, 25);
+    background-color: rgb(207, 120, 6);
     cursor: pointer;
     border-radius: 11px;
 }
@@ -89,7 +89,7 @@ select{
     font-size: 18px;
     width: 40px;
     height: 32px;
-    background-color: rgb(190, 116, 31);
+    background-color: rgb(218, 116, 0);
     cursor: pointer;
     border:3px solid rgb(63, 41, 7);
     border-radius: 20px;
