@@ -56,7 +56,7 @@ body img {
     width: 50px;
     height: 25px;
     border:3px #333 double;
-    background-color: rgb(145, 97, 34);
+    background-color: rgb(194, 121, 25);
     cursor: pointer;
     border-radius: 11px;
 }
@@ -80,20 +80,21 @@ body img {
     margin-top: 20px;
 }
 .point-tele,.point-auto{
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 18px;
     width: 40px;
     height: 32px;
-    background-color: rgb(146, 84, 12);
+    background-color: rgb(190, 116, 31);
     cursor: pointer;
     border:3px solid rgb(63, 41, 7);
     border-radius: 20px;
 }
 
 .point-tele:active,.point-auto:active{
-    background-color: rgb(146, 84, 12);
+    background-color: rgb(184, 110, 26);
 
 }
 
