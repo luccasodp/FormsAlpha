@@ -15,10 +15,7 @@ body img {
     object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
 }
 
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
+
 
 .form-container {
     max-width: 400px;
@@ -33,67 +30,71 @@ a{
 .form-container h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 5%;
     padding: 10px;
 }
 
-.button{
+.button_posi,.button_robo{
     display: flex;
     flex-direction: row;
     text-align:left;
     text-justify: distribute;
-    gap: 5px;
+    gap: 50px;
     padding: 10px;
 
-    
 }
 
-#direita_Piloto:active{
-    background-color: aqua;
+.posi:active,.robo:active{
+    background-color: rgb(255, 174, 0);
 }
 
-.button_robo{
-    display: flex;
-    flex-direction: row;
-    text-align:left;
-    text-justify: distribute;
-    gap: 5px;
-    padding: 10px;
-    padding-bottom: 30px;
-}
-
-.posi{
-    width: 65px;
-    height: 32px;
-    background-color: gray;
+.posi,.robo{
+    width: 50px;
+    height: 25px;
+    border:3px #333 double;
+    background-color: rgb(145, 97, 34);
     cursor: pointer;
-    border-radius: 5px;
-}
-.robo{
-    width: 65px;
-    height: 32px;
-    background-color: gray;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 11px;
 }
 
-.point-tele{
-    width: 65px;
-    height: 32px;
-    background-color: gray;
-    cursor: pointer;
-    border-radius: 5px;
+.score {
+    display: inline-block;
+    width: 100px; /* Define uma largura fixa para manter o alinhamento */
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; /* Cor do texto */
+    background-color: #fff; /* Fundo branco para destaque */
+    border-radius: 10px;
+    margin: 0 10px; /* Espaço entre o texto e o botão */
+    border: 3px solid #202020; /* Borda para melhor visibilidade */
 }
 
-.point-auto{
-    width: 65px;
+#PontosAutonomoLabel{
+    margin-top: 20px;
+}
+.point-tele,.point-auto{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    width: 40px;
     height: 32px;
-    background-color: gray;
+    background-color: rgb(146, 84, 12);
     cursor: pointer;
-    border-radius: 5px;
+    border:3px solid rgb(63, 41, 7);
+    border-radius: 20px;
+}
+
+.point-tele:active,.point-auto:active{
+    background-color: rgb(146, 84, 12);
+
 }
 
 #piloto {
@@ -373,3 +374,10 @@ header{
     transition: transform 0.4s;
 }
 
+
+.label{
+    border-radius: 30%;
+    display: inline;
+    background-color: white ;
+    
+}

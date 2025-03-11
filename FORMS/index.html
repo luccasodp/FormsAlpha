@@ -16,7 +16,7 @@
         <form id="competitionForm" method="post">
             <!-- Temporada -->
             <div class="form-group">
-                <div>Qual a aliança?</div>
+                <h2>Qual é a aliança?</h2>
                 <label>
                     <input type="radio" id="alianceBlue" name="aliance" value="Azul" required=""> Azul
                 </label>
@@ -30,12 +30,65 @@
                 <label for="numero-equipe">Número da equipe:</label>
 
                 <select id="numero-equipe" name="numero-equipe"required="" >
-                    <option value="">Selecione uma opção</option>
-                    <option value="6328">6328</option>
-                    <option value="3467">3467</option>
-                    <option value="97">97</option>
-                    <option value="5902">5902</option>
-                    
+                    <option value="">Selecione um valor</option>
+                    <option value="1156">1156</option>
+                    <option value="1772">1772</option>
+                    <option value="1860">1860</option>
+                    <option value="5800">5800</option>
+                    <option value="6404">6404</option>
+                    <option value="7033">7033</option>
+                    <option value="7459">7459</option>
+                    <option value="7563">7563</option>
+                    <option value="7565">7565</option>
+                    <option value="7657">7567</option>
+                    <option value="8066">8066</option>
+                    <option value="8276">8276</option>
+                    <option value="8882">8882</option>
+                    <option value="9045">9045</option>
+                    <option value="9046">9046</option>
+                    <option value="9047">9047</option>
+                    <option value="9048">9048</option>
+                    <option value="9049">9049</option>
+                    <option value="9050">9050</option>
+                    <option value="9066">9066</option>
+                    <option value="9085">9085</option>
+                    <option value="9110">9110</option>
+                    <option value="9162">9162</option>
+                    <option value="9163">9163</option>
+                    <option value="9164">9164</option>
+                    <option value="9166">9166</option>
+                    <option value="9169">9169</option>
+                    <option value="9175">9175</option>
+                    <option value="9178">9178</option>
+                    <option value="9195">9195</option>
+                    <option value="9199">9199</option>
+                    <option value="9200">9200</option>
+                    <option value="9218">9218</option>
+                    <option value="9219">9219</option>
+                    <option value="9302">9302</option>
+                    <option value="9305">9305</option>
+                    <option value="9458">9458</option>
+                    <option value="9459">9459</option>
+                    <option value="9460">9460</option>
+                    <option value="9461">9461</option>
+                    <option value="9484">9484</option>
+                    <option value="9486">9486</option>
+                    <option value="9487">9487</option>
+                    <option value="9603">9603</option>
+                    <option value="9604">9604</option>
+                    <option value="9611">9611</option>
+                    <option value="9614">9614</option>
+                    <option value="9617">9617</option>
+                    <option value="9657">9657</option>
+                    <option value="9675">9675</option>
+                    <option value="10019">10019</option>
+                    <option value="10140">10140</option>
+                    <option value="10190">10190</option>
+                    <option value="10200">10200</option>
+                    <option value="10343">10343</option>
+                    <option value="10345">10345</option>
+                    <option value="10356">10356</option>
+                    <option value="10466">10466</option>
                   </select>
             </div>
 
@@ -57,19 +110,19 @@
 
             <div class="form-group">
                 <label>Posição do piloto:<label>
-                <div class="button">
-                <label for="Esquerda Piloto">
-                    <button class="posi" id="Esquerda Piloto"></button>
-                    Esquerda
-                </label>
-                <label for="Meio Piloto">
-                    <button class="posi" id="Meio Piloto"></button>
-                    Meio
-                </label>
-                <label for="Direita Piloto">
-                    <button class="posi" id="Direita Piloto"></button>
-                    Direita
-                </label>
+                <div class="button_posi">
+                        <label for="Esquerda_Piloto">
+                            <button class="posi" id="Esquerda_Piloto"></button>
+                            Esquerda
+                        </label>
+                        <label for="Meio_Piloto">
+                            <button class="posi" id="Meio_Piloto"></button>
+                            Meio
+                        </label>
+                        <label for="Direita_Piloto">
+                            <button class="posi" id="Direita_Piloto"></button>
+                            Direita
+                        </label>
                 
             </div>
             </div>
@@ -79,48 +132,107 @@
                 <div>Posição robô:</div>
                 <div class="button_robo">
                     
-                    <label for="Esquerda Robo">
-                        <button class="robo" id="Esquerda Robo"></button>
+                    <label for="Esquerda_Robo">
+                        <button class="robo" id="Esquerda_Robo"></button>
                         Esquerda
                     </label>
                     
-                    <label for="Meio Robo">
-                        <button class="robo" id="Meio Robo"></button>
+                    <label for="Meio_Robo">
+                        <button class="robo" id="Meio_Robo"></button>
                         Meio
                     </label>
-                    <label for="Direita Robo">
-                        <button class="robo" id="Direita Robo"></button>
+                    <label for="Direita_Robo">
+                        <button class="robo" id="Direita_Robo"></button>
                         Direita
-                    </label>
-                    
+                    </label> 
                 </div>
-
-                <div>Pontos de autônomo:</div>
-                <label>L4 <button class="point-auto" id="L4-auto"></button></label>
-                <label>L3 <button class="point-auto" id="L3-auto"></button></label>
-                <label>L2 <button class="point-auto" id="L2-auto"></button></label>
-                <label>L1 <button class="point-auto" id="L1-auto"></button></label>
-                
-                <label>Rede <button class="point-auto" id="rede"></button></label>
-                <label>Processador <button class="point-auto" id="processador"></button></label>
             </div>
-
-            <!-- Pontos de teleoperado -->
             <div class="form-group">
-                <div>Pontos de teleoperado:</div>
-                <label>L4 <div class="label"></div><button class="point-tele" id="L4-tele"></button></label>
-                <label>L3 <button class="point-tele" id="L3-tele"></button></label>
-                <label>L2 <button class="point-tele" id="L2-tele"></button></label>
-                <label>L1 <button class="point-tele" id="L1-tele"></button></label>   
-                <label>Rede <button class="point-tele" id="rede"></button></label>
-                <label>Processador <button class="point-tele" id="processador"></button></label>
-            </div>
+                <h2>Pontos de autônomo:</h2>
+
+<label>L4 
+    <span class="score" id="L4-scoreA">0</span> 
+    <button class="point-auto" id="L4-autoDecrement">-</button>
+    <button class="point-auto" id="L4-autoIncrement">+</button>
+</label>
+
+<label>L3 
+    <span class="score" id="L3-scoreA">0</span> 
+    <button class="point-auto" id="L3-autoDecrement">-</button>
+    <button class="point-auto" id="L3-autoIncrement">+</button>
+</label>
+
+<label>L2 
+    <span class="score" id="L2-scoreA">0</span> 
+    <button class="point-auto" id="L2-autoDecrement">-</button>
+    <button class="point-auto" id="L2-autoIncrement">+</button>
+</label>
+
+<label>L1 
+    <span class="score" id="L1-scoreA">0</span> 
+    <button class="point-auto" id="L1-autoDecrement">-</button>
+    <button class="point-auto" id="L1-autoIncrement">+</button>
+</label>   
+
+<label>Rede 
+    <span class="score" id="rede-scoreA">0</span> 
+    <button class="point-auto" id="redeAutoDecrement">-</button>
+    <button class="point-auto" id="redeAutoIncrement">+</button>
+</label>
+
+<label>Processador 
+    <span class="score" id="processador-scoreA">0</span> 
+    <button class="point-auto" id="processadorAutoDecrement">-</button>
+    <button class="point-auto" id="processadorAutoIncrement">+</button>
+</label>
+
+</div>
+
+<!-- Pontos de teleoperado -->
+<div class="form-group">
+    <h2>Pontos de teleoperado:</h2>
+
+    <label>L4 
+        <span class="score" id="L4-scoreT">0</span> 
+        <button class="point-tele" id="L4-teleDecrement">-</button>
+        <button class="point-tele" id="L4-teleIncrement">+</button>
+    </label>
+
+    <label>L3 
+        <span class="score" id="L3-scoreT">0</span> 
+        <button class="point-tele" id="L3-teleDecrement">-</button>
+        <button class="point-tele" id="L3-teleIncrement">+</button>
+    </label>
+
+    <label>L2 
+        <span class="score" id="L2-scoreT">0</span> 
+        <button class="point-tele" id="L2-teleDecrement">-</button>
+        <button class="point-tele" id="L2-teleIncrement">+</button>
+    </label>
+
+    <label>L1 
+        <span class="score" id="L1-scoreT">0</span> 
+        <button class="point-tele" id="L1-teleDecrement">-</button>
+        <button class="point-tele" id="L1-teleIncrement">+</button>
+    </label>   
+
+    <label>Rede 
+        <span class="score" id="rede-scoreT">0</span> 
+        <button class="point-tele" id="redeTeleopDecrement">-</button>
+        <button class="point-tele" id="redeTeleopIncrement">+</button>
+    </label>
+
+    <label>Processador 
+        <span class="score" id="processador-scoreT">0</span> 
+        <button class="point-tele" id="processadorTeleopDecrement">-</button>
+        <button class="point-tele" id="processadorTeleopIncrement">+</button>
+    </label>
 
             <!--forma de coleta-->
 
             <!-- barge -->
             <div class="form-group">
-                <div>Barge:</div>
+                <h2>Barge:</h2>
                 <label><input type="radio" id="estacinar" name="barge" value="estacionar" required=""> Estacionar</label>
                 <label><input type="radio" id="rasa" name="barge" value="rasa" required=""> Rasa</label>
                 <label><input type="radio" id="profunda" name="barge" value="profunda" required=""> Profunda</label>
@@ -155,7 +267,7 @@
 
             <!-- Penalidades e observações -->
             <div class="form-group">
-                <label for="penalidades">Observações:</label>
+                <label for="penalidades"><h2>Observações:</h2></label>
                 <textarea id="penalidades" name="penalidades" rows="4"></textarea>
             </div>
 
@@ -167,7 +279,7 @@
                     <option value="Marina">Marina</option>
                     <option value="Flora"> Flora</option>
                     <option value="Caio">Caio</option>
-                    <option value="Julia">Julia </option>
+                    <option value="Julia">Julia</option>
                   </select>
             </div>
 
@@ -230,44 +342,77 @@
         });
     });
 
-    document.querySelectorAll('.robo').forEach((button) => {
-        button.addEventListener('click', function (e) {
-            e.preventDefault();
-            posicaoRobo = this.id;
-        });
-    });
 
-    // Lógica para os botões de pontos de autônomo
+
+    //INCREMENTO AUTO
     document.querySelectorAll('.point-auto').forEach((button) => {
         button.addEventListener('click', function (e) {
             e.preventDefault();
             switch (this.id) {
-                case 'L1-auto': 
-                pontosAutonomo += 3; 
-                l1_auto++; 
-                break;
-                case 'L2-auto': 
-                pontosAutonomo += 4; 
-                l2_auto++; 
-                break;
-                case 'L3-auto': 
-                pontosAutonomo += 6; 
-                l3_auto++; 
-                break;
-                case 'L4-auto': 
-                pontosAutonomo += 7; 
-                l4_auto++; 
-                break;
-                case 'rede': 
-                pontosAutonomo += 4; 
-                rede_auto++; 
-                break;
-                case 'processador': 
-                pontosAutonomo += 6; 
-                process_auto++; 
-                break;
+                case 'L1-autoIncrement': 
+                    pontosAutonomo += 3; 
+                    l1_auto++; 
+                    document.getElementById("L1-scoreA").textContent = String(l1_auto);
+                    break;
+                case 'L2-autoIncrement': 
+                    pontosAutonomo += 4; 
+                    l2_auto++; 
+                    document.getElementById("L2-scoreA").textContent = String(l2_auto);
+                    break;
+                case 'L3-autoIncrement': 
+                    pontosAutonomo += 6; 
+                    l3_auto++; 
+                    document.getElementById("L3-scoreA").textContent = String(l3_auto);
+                    break;
+                case 'L4-autoIncrement': 
+                    pontosAutonomo += 7; 
+                    l4_auto++; 
+                    document.getElementById("L4-scoreA").textContent = String(l4_auto);
+                    break;
+                case 'redeAutoIncrement': 
+                    pontosAutonomo += 4; 
+                    rede_auto++; 
+                    document.getElementById("rede-scoreA").textContent = String(rede_auto);
+                    break;
+                case 'processadorAutoIncrement': 
+                    pontosAutonomo += 6; 
+                    process_auto++;
+                    document.getElementById("processador-scoreA").textContent = String(process_auto);
+                    break;
+
+
+                case 'L1-autoDecrement': 
+                    pontosAutonomo -= 3; 
+                    l1_auto--; 
+                    document.getElementById("L1-scoreA").textContent = String(l1_auto);
+                    break;
+                case 'L2-autoDecrement': 
+                    pontosAutonomo -= 4; 
+                    l2_auto--; 
+                    document.getElementById("L2-scoreA").textContent = String(l2_auto);
+                    break;
+                case 'L3-autoDecrement': 
+                    pontosAutonomo -= 6; 
+                    l3_auto--; 
+                    document.getElementById("L3-scoreA").textContent = String(l3_auto);
+                    break;
+                case 'L4-autoDecrement': 
+                    pontosAutonomo -= 7; 
+                    l4_auto--; 
+                    document.getElementById("L4-scoreA").textContent = String(l4_auto);
+                    break;
+                case 'redeAutoDecrement': 
+                    pontosAutonomo -= 4; 
+                    rede_auto--; 
+                    document.getElementById("rede-scoreA").textContent = String(rede_auto);
+                    break;
+                case 'processadorAutoDecrement': 
+                    pontosAutonomo -= 6; 
+                    process_auto--;
+                    document.getElementById("processador-scoreA").textContent = String(process_auto);
+                    break
             }
-            if (pontosAutonomo != 0 && !saida) {
+            if (pontosAutonomo > 0 && !saida) {
                 pontosAutonomo += 3;
                 saida = true;
             }
@@ -280,30 +425,70 @@
         button.addEventListener('click', function (e) {
             e.preventDefault();
             switch (this.id) {
-                case 'L1-tele': 
-                pontosTeleoperado += 2; 
-                l1_tele++; 
-                break;
-                case 'L2-tele': 
-                pontosTeleoperado += 3; 
-                l2_tele++; 
-                break;
-                case 'L3-tele': 
-                pontosTeleoperado += 4; 
-                l3_tele++; 
-                break;
-                case 'L4-tele': 
-                pontosTeleoperado += 5; 
-                l4_tele++; 
-                break;
-                case 'rede': 
-                pontosTeleoperado += 4; 
-                rede_tele++; 
-                break;
-                case 'processador': 
-                pontosTeleoperado += 6; 
-                process_tele++; 
-                break;
+                case 'L1-teleIncrement': 
+                    pontosTeleoperado += 2; 
+                    l1_tele++; 
+                    document.getElementById("L1-scoreT").textContent = String(l1_tele);
+                    break;
+                case 'L2-teleIncrement': 
+                    pontosTeleoperado += 3; 
+                    l2_tele++; 
+                    document.getElementById("L2-scoreT").textContent = String(l2_tele);
+                    break;
+                case 'L3-teleIncrement': 
+                    pontosTeleoperado += 4; 
+                    l3_tele++; 
+                    document.getElementById("L3-scoreT").textContent = String(l3_tele);
+                    break;
+                case 'L4-teleIncrement': 
+                    pontosTeleoperado += 5; 
+                    l4_tele++; 
+                    document.getElementById("L4-scoreT").textContent = String(l4_tele);
+                    break;
+                case 'redeTeleopIncrement': 
+                    pontosTeleoperado += 4; 
+                    rede_tele++; 
+                    document.getElementById("rede-scoreT").textContent = String(rede_tele);
+                    break;
+                case 'processadorTeleopIncrement': 
+                    pontosTeleoperado+= 6; 
+                    process_tele++;
+                    document.getElementById("processador-scoreT").textContent = String(process_tele);
+                    break;
+
+
+
+                    case 'L1-teleDecrement': 
+                    pontosTeleoperado -= 2; 
+                    l1_tele--; 
+                    document.getElementById("L1-scoreT").textContent = String(l1_tele);
+                    break;
+                case 'L2-teleDecrement': 
+                    pontosTeleoperado -= 3; 
+                    l2_tele--; 
+                    document.getElementById("L2-scoreT").textContent = String(l2_tele);
+                    break;
+                case 'L3-teleDecrement': 
+                    pontosTeleoperado -= 4; 
+                    l3_tele--; 
+                    document.getElementById("L3-scoreT").textContent = String(l3_tele);
+                    break;
+                case 'L4-teleDecrement': 
+                    pontosTeleoperado -= 5; 
+                    l4_tele--; 
+                    document.getElementById("L4-scoreT").textContent = String(l4_tele);
+                    break;
+                case 'redeTeleopDecrement': 
+                    pontosTeleoperado -= 4; 
+                    rede_tele--; 
+                    document.getElementById("rede-scoreT").textContent = String(rede_tele);
+                    break;
+                case 'processadorTeleopDecrement': 
+                    pontosTeleoperado-= 6; 
+                    process_tele--;
+                    document.getElementById("processador-scoreT").textContent = String(process_tele);
+                    break;
+
             }
             atualizarPontos();
         });
