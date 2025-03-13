@@ -236,9 +236,10 @@
             <!-- barge -->
             <div class="form-group">
                 <h2>Barge:</h2>
-                <label><input type="radio" id="estacinar" name="barge" value="estacionar" required=""> Estacionar</label>
-                <label><input type="radio" id="rasa" name="barge" value="rasa" required=""> Rasa</label>
-                <label><input type="radio" id="profunda" name="barge" value="profunda" required=""> Profunda</label>
+                <label><input type="radio" id="nenhum" name="barge" value="none" required="">Nenhum</label>
+                <label><input type="radio" id="estacinar" name="barge" value="Parked" required=""> Estacionar</label>
+                <label><input type="radio" id="rasa" name="barge" value="ShallowCage" required=""> Rasa</label>
+                <label><input type="radio" id="profunda" name="barge" value="DeepCage" required=""> Profunda</label>
             </div>
             <div>
                 <fieldset>
@@ -494,9 +495,10 @@
     document.querySelectorAll('input[name="barge"]').forEach((radio) => {
         radio.addEventListener('change', function () {
             switch (this.value) {
-                case 'profunda': pontosBarge = 12; break;
-                case 'rasa': pontosBarge = 6; break;
-                case 'estacionar': pontosBarge = 2; break;
+                case 'DeepCage': pontosBarge = 12; break;
+                case 'ShallowCage': pontosBarge = 6; break;
+                case 'Parked': pontosBarge = 2; break;
+                case 'None': pontosBarge = 0; break;
             }
             atualizarPontos();
         });
